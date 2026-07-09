@@ -1,0 +1,55 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:054129814226:task-definition/node-demo:3",
+    "containerDefinitions": [
+        {
+            "name": "node-demo",
+            "image": "054129814226.dkr.ecr.ap-south-1.amazonaws.com/node-demo:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "hostPort": 3000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "systemControls": []
+        }
+    ],
+    "family": "node-demo",
+    "executionRoleArn": "arn:aws:iam::054129814226:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 3,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE",
+        "MANAGED_INSTANCES"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "registeredAt": "2026-07-09T03:09:28.662000+00:00",
+    "registeredBy": "arn:aws:iam::054129814226:user/anjali-admin"
+}
