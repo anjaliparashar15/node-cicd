@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/app', (req, res) => {
-    res.send('redirecing to app hello from ruchii');
+    res.send('redirecing to my new app page');
 });
 
 app.listen(3000, () => {
