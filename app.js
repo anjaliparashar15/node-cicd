@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/app', (req, res) => {
-    res.send('redirecing to my new app page');
+    res.send('ci/cd deployment completed successfully');
 });
 
 app.listen(3000, () => {
